@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Comment Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .form-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 400px;
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    .submit-btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Send Us Your Comments</h1>
+  <p>Required fields marked with an asterisk *</p>
+
+  <div class="form-container">
+    <form>
+      <label for="name">*Name:</label>
+      <input type="text" id="name" name="name" placeholder="your first and last name" required>
+
+      <label for="email">*E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="rating">Rating (1 - 10):</label>
+      <input type="number" id="rating" name="rating" min="1" max="10">
+
+      <label for="comments">*Comments:</label>
+      <textarea id="comments" name="comments" rows="4" required></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
